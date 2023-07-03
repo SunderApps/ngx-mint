@@ -1,13 +1,25 @@
 {
-  "name": "ngx-mint",
+  "name": "@appartmint/ngx-mint",
   "version": "0.0.1",
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "private",
+    "registry": "https://npm.pkg.github.com/@appartmint"
+  },
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "ng build ngx-mint --configuration production",
+    "build:dev": "ng build ngx-mint --configuration development",
+    "watch": "ng build ngx-mint --watch --configuration development",
+    "test": "ng test",
+    "lint": "ng lint"
+  },
   "peerDependencies": {
     "@angular/common": "^16.0.0",
-    "@angular/core": "^16.0.0"
+    "@angular/core": "^16.0.0",
+    "@appartmint/mint": "^0.9.7"
   },
   "dependencies": {
-    "@appartmint/mint": "^0.9.7",
     "tslib": "^2.3.0"
-  },
-  "sideEffects": false
+  }
 }
