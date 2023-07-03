@@ -6,6 +6,7 @@
     "@angular/core": "^16.0.0"
   },
   "dependencies": {
+    "@appartmint/mint": "^0.9.7",
     "tslib": "^2.3.0"
   },
   "sideEffects": false
